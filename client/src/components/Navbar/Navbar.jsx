@@ -41,6 +41,9 @@ const Navbar = () => {
               <NavLink to="/about" onClick={() => setShowMediaIcons(false)}>About</NavLink>
             </li>
             <li>
+              <NavLink to="/register" onClick={() => setShowMediaIcons(false)}>Register</NavLink>
+            </li>
+            <li>
               <NavLink to="/contact" onClick={() => setShowMediaIcons(false)}>Contact</NavLink>
             </li>
           </ul>
