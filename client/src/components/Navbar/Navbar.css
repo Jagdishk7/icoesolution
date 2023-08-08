@@ -25,12 +25,16 @@ li {
 /* navbar style start  */
 
 .main-nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
   width: 100%;
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    z-index: 99;
 }
 
 .logo {
@@ -41,7 +45,7 @@ li {
   align-items: center;
 }
 
-.logo > img{
+.logo  img{
     width: 15rem;
 }
 .menu-link {
@@ -75,6 +79,8 @@ li {
   grid-column: 2/3;
 }
 
+
+
 /* ----------- Grid part ends ----------------- */
 
 .logo h2 {
@@ -92,6 +98,7 @@ li {
 
 .menu-link ul li {
   font-size: 1.8rem;
+  position: relative;
 }
 
 .menu-link ul li a {
@@ -99,12 +106,31 @@ li {
   color: rgba(0, 0, 3, 0.8);
   transition: 0.5s;
 }
+/* .menu-link ul li a:focus {
+  text-transform: capitalize;
+  color: rgb(255, 94, 0);
+}
 .menu-link ul li:hover > a {
   transform-origin: left;
   color: rgba(0, 0, 3, 1);
-  text-decoration: underline;
+  text-decoration: dotted;
+  transition: 0.5s;
+} */
+.menu-link ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
   transition: 0.5s;
 }
+
+.menu-link ul li a:hover::after {
+  width: 100%;
+}
+
 
 .social-media ul li {
   font-size: 1.8rem;
@@ -181,23 +207,23 @@ li {
     height: 7rem;
   }
 
-  .mobile-menu-link {
+  /* .mobile-menu-link {
     grid-column: 2/4;
     position: relative;
     z-index: 99;
-  }
+  } */
 
   .mobile-menu-link {
     background-color: white;
     height: 20rem;
     display: grid;
-    grid-column: 2/5;
+    grid-column: 1/6;
     align-items: center;
-    padding-left: 3rem;
-    transition: all 2s linear;
+    padding-left: 1rem;
+    transition: all 1s linear;
     transform-origin: top;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 0.65rem 1rem ;
+      z-index: 99;
   }
 
   .mobile-menu-link ul {
@@ -267,6 +293,7 @@ li {
     height: 6rem;
     grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
   }
+
 
   .logo,
   .social-media ul {
