@@ -17,24 +17,33 @@ const CardSlider = ({heading}) => {
 
   var settings = {
         dots: true,
-        infinite: true,
+        // infinite: true,
         speed: 1000,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        centerMode:true,
+
+        centerPadding:'20px',
         responsive:[
           {
             breakpoint:425,
             settings:{
-              slidesToShow:1,
+              slidesToShow:2,
               centerMode:true,
               centerPadding:'20px'
             }
           },
           {
+            breakpoint:500,
+            settings:{
+              slidesToShow:2,
+              centerMode:true,
+              centerPadding:'40px'
+            }
+          },
+          {
             breakpoint:592,
             settings:{
-              slidesToShow:1,
+              slidesToShow:3,
               centerMode:true,
               centerPadding:'40px'
             }
@@ -42,21 +51,21 @@ const CardSlider = ({heading}) => {
           {
             breakpoint:660,
             settings:{
-              slidesToShow:1,
+              slidesToShow:4,
               centerMode:true
             }
           },
           {
             breakpoint:963,
             settings:{
-              slidesToShow:2,
+              slidesToShow:5,
               centerMode:false
             }
           },
           {
             breakpoint:1200,
             settings:{
-              slidesToShow:3,
+              slidesToShow:6,
               centerMode:false
             }
           }
@@ -64,25 +73,32 @@ const CardSlider = ({heading}) => {
       };
 
   return (
-    <div >
+    < >
       <Slider {...settings} className='card-slider'>
-      <div>
-        <img src="assets/icoess-logo.png" alt="" />
+      <div className='slider-item'>
+        {/* <img src="assets/icoess-logo.png" alt="" /> */}
+        <p>Full Stack Web Development</p>
       </div>
-      <div>
-        <img src="assets/icoess-logo.png" alt="" />
+      <div className='slider-item'>
+        {/* <img src="assets/icoess-logo.png" alt="" /> */}
+        <p>Full Stack Web Development</p>
       </div>
-      <div>
-        <img src="assets/icoess-logo.png" alt="" />
+      <div className='slider-item'>
+        {/* <img src="assets/icoess-logo.png" alt="" /> */}
+        <p>Full Stack Web Development</p>
       </div>
-      <div>
-        <img src="assets/icoess-logo.png" alt="" />
+      <div className='slider-item'>
+        {/* <img src="assets/icoess-logo.png" alt="" /> */}
+        <p>Full Stack Web Development</p>
       </div>
-      <div>
-        <img src="assets/icoess-logo.png" alt="" />
+      <div className='slider-item'>
+        {/* <img src="assets/icoess-logo.png" alt="" /> */}
+        <p>Full Stack Web Development</p>
       </div>
+
+      
     </Slider>
-    </div>
+    </>
   )
 }
 
