@@ -1,0 +1,126 @@
+/*=============== FOOTER ===============*/
+.footer__container {
+    row-gap: 5rem;
+    background-color: #dbdbdb;
+  }
+  
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+  }
+  
+  .footer__title,
+  .footer__subtitle {
+    font-size:1.8rem;
+  }
+  
+  .footer__title {
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .footer__description {
+    margin-bottom: var(--mb-2);
+  }
+  
+  .footer__social {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1-25);
+  }
+  
+  .footer__subtitle {
+    margin-bottom: var(--mb-1);
+  }
+  
+  .footer__item {
+    margin-bottom: var(--mb-0-75);
+  }
+  
+  .footer__link {
+    color: #3d3d3dda;
+    font-size: 1.5rem;
+  }
+  
+  .footer__link:hover {
+    color: var(--title-color);
+  }
+  
+  .footer__rights {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer__copy,
+  .footer__terms-link {
+    font-size: 1rem;
+    color: var(--text-color-light);
+  }
+  
+  .footer__terms {
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .footer__terms-link:hover {
+    color: var(--text-color);
+  }
+
+  .footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-email{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgb(167, 167, 167);
+  }
+  
+  .footer-email >input{
+    background-color: var(--bg-black-700);
+    border: none;
+    outline: none;
+  }
+  
+  .footer-subscribe-btn{
+
+width: 100%;
+    padding: 10px 2rem;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px dotted rgb(92, 92, 92);
+    cursor:pointer;
+  }
+
+  .footer-subscribe-btn:focus{
+    background-color: #fff;
+  }
+  
+  .footer-subscribe-btn > .subscribe-img{
+    width: 2rem;
+    transform: scale(1.5);
+  }
+  
+  .footer-subscribe-btn > p{
+    font-size: 12px;
+  }
+
+  .footer-socials{
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-socials > a{
+    transform: scale(2);
+  }

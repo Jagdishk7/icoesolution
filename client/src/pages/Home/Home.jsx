@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Footer from "../../components/Footer/Footer";
 import Card1 from "../../components/cards/Card1";
 import SideNav from "../../components/Navbar/SideNav";
 import { FaLaptopCode } from "react-icons/fa";
@@ -7,6 +8,7 @@ import { GiSmartphone } from "react-icons/gi";
 import { RiComputerLine } from "react-icons/ri";
 import { PiGameControllerBold } from "react-icons/pi";
 import { TbTopologyComplex } from "react-icons/tb";
+import { BiLinkExternal } from "react-icons/bi";
 
 const Home = () => {
   return (
@@ -45,7 +47,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Projects Section  */}
+        {/* Start Front Intro Section  */}
 
         <article class="article front-intro">
           <div class="content">
@@ -64,7 +66,9 @@ const Home = () => {
             <img src="assets/icoess.jpg" alt="Shiv Shakti Gurukulam" />
           </figure>
         </article>
+        {/* End Front Intro Section  */}
 
+        {/* Start Home Services Section  */}
         <section id="home-services" className="main section-wrap">
           <div className="home-services ">
             <div className="home-services-header">
@@ -166,24 +170,213 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/*  End Services Section */}
+        {/*  End Home Services Section */}
+
+        {/*  Start Insights Section */}
 
         <section id="insights" className="insights-section container">
-          <div className="flex">
+          <div className="flex insights-container">
             <div className="insight-info">
-            <h2 className="heading2">Insights</h2>
-            <p className="paragraph">
-              Our Thinking of Ideas, Technologies & Trends that create impact
-            </p>
-            <button className="cta">Read More</button>
+              <h2 className="heading2">Insights</h2>
+              <p className="paragraph">
+                Our Thinking of Ideas, Technologies & Trends that create impact
+              </p>
             </div>
             <div className="insight-imgs row">
-              <img src="assets/background.jpg" alt="" />
-              <img src="assets/background.jpg" alt="" />
-              <img src="assets/background.jpg" alt="" />
+              <div className="grid_item center">
+                <div class="card">
+                  <img src="assets/card1.png" alt="Project 1" />
+                  <a href="/">
+                    <div class="card_content">
+                      <h3>Read More</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="grid_item center">
+                <div class="card">
+                  <img src="assets/card1.png" alt="Project 1" />
+                  <a href="/">
+                    <div class="card_content">
+                      <h3>Read More</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="grid_item center">
+                <div class="card">
+                  <img src="assets/card1.png" alt="Project 1" />
+                  <a href="/">
+                    <div class="card_content">
+                      <h3>Read More</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+        {/*  End Insights Section */}
+
+        {/*  Start Service Areas Section */}
+
+        <section id="service-areas" className="service-areas container">
+          <h1 className="section-title">
+            Our Service <span>Areas</span>
+          </h1>
+          <div className="card-container">
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+            <div className="course-item wh-300 bg-green">
+              <FaLaptopCode className="course-icon" />
+              <p>Websites</p>
+            </div>
+          </div>
+        </section>
+        {/*  End Service Areas Section */}
+
+        {/*  Start inside icoess Section */}
+
+        <section id="inside-icoess" className="section inside-icoess container">
+          <div className="flex insights-container">
+            <div className="insight-info">
+              <h2 className="heading2">Inside ICOESS</h2>
+            </div>
+            <div className="insight-imgs row">
+              <div className="work">
+                <div className="grid_item">
+                  <div className="inside-icoess-card">
+                    <div className="image_container">
+                      <img src="assets/background.jpg" alt="web development" />
+                    </div>
+                    <div className="inside-icoess-card_content">
+                      <h3>UI UX Design</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ratione quibusdam ex quaerat quasi nostrum
+                        tempore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid_item">
+                  <div className="inside-icoess-card">
+                    <div className="image_container">
+                      <img src="assets/background.jpg" alt="web development" />
+                    </div>
+                    <div className="inside-icoess-card_content">
+                      <h3>UI UX Design</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ratione quibusdam ex quaerat quasi nostrum
+                        tempore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid_item">
+                  <div className="inside-icoess-card">
+                    <div className="image_container">
+                      <img src="assets/background.jpg" alt="web development" />
+                    </div>
+                    <div className="inside-icoess-card_content">
+                      <h3>UI UX Design</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ratione quibusdam ex quaerat quasi nostrum
+                        tempore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*  End inside icoess Section */}
+        {/*  Start Contact Section */}
+
+        <section
+          id="home-contact-section"
+          className="home-contact-section container"
+        >
+          <div className="home-services-header">
+              <h1 className="section-title">
+                Contact <span>Us</span>
+              </h1>
+            </div>
+          <div className="contact-container">
+            <div className="contact-card">
+              <div className="contact-left">
+                <img src="assets/contact.jpg" alt="" />
+                <p>
+                  Talk to us for your business needs, all staffing requirements
+                  and anything on technology. We would love to here from you &
+                  share our expertise with you
+                </p>
+              </div>
+              <div className="contact-right">
+                <div class="contact-form">
+                  <h3>Contact us</h3>
+                  <form action="">
+                    <p>
+                      <label>First Name</label>
+                      <input type="text" name="firstName" />
+                    </p>
+                    <p>
+                      <label>Last Name</label>
+                      <input type="text" name="lastName" />
+                    </p>
+                    <p>
+                      <label>Phone Number</label>
+                      <input type="number" name="phone" />
+                    </p>
+                    <p>
+                      <label>Email Adress</label>
+                      <input type="email" name="email" />
+                    </p>
+                    <p class="block">
+                      <label>Message</label>
+                      <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p className="block">
+                      <button>Send</button>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*  End Contact Section */}
+        <Footer />
       </main>
     </>
   );
