@@ -8,7 +8,6 @@ import { GiSmartphone } from "react-icons/gi";
 import { RiComputerLine } from "react-icons/ri";
 import { PiGameControllerBold } from "react-icons/pi";
 import { TbTopologyComplex } from "react-icons/tb";
-import { BiLinkExternal } from "react-icons/bi";
 
 const Home = () => {
   return (
@@ -60,6 +59,18 @@ const Home = () => {
               portals, Web Applications? Just knock the door of us, Tell your
               requirements and rest leave to us.
             </p>
+            <p>
+              Mobile app development is rapidly growing. From retail,
+              telecommunications and e-commerce to insurance, healthcare and
+              government, organizations across industries must meet user
+              expectations for real-time, convenient ways to conduct
+              transactions and access information. Today, mobile devices—and the
+              mobile applications that unlock their value—are the most popular
+              way for people and businesses to connect to the internet. To stay
+              relevant, responsive and successful, organizations need to develop
+              the mobile applications that their customers, partners and
+              employees demand.
+            </p>
           </div>
 
           <figure class="image-wrap">
@@ -79,8 +90,37 @@ const Home = () => {
             <div className="all-home-services">
               <div className="card2-item article">
                 <div className="card2-info">
-                  <h1>Web Development</h1>
+                  <h1>Corporate Training</h1>
 
+                  <p>
+                    We help corporates to bridge competency gap towards building
+                    skilled and productive workforce. We provide turnkey in
+                    company training and skill building services...
+                  </p>
+                  <button className="cta">Know More</button>
+                </div>
+                <div className="card2-img">
+                  <img src="assets/service/web.jpg" alt="img" />{" "}
+                </div>
+              </div>
+              <div className="card2-item article">
+                <div className="card2-info">
+                  <h1>Education Support</h1>
+
+                  <p>
+                    Supporting Education began to be included as part of our
+                    corporate culture. ICOESS's educational practices &
+                    programes which have immediately applicable workskills...
+                  </p>
+                  <button className="cta">Know More</button>
+                </div>
+                <div className="card2-img">
+                  <img src="assets/service/web.jpg" alt="img" />{" "}
+                </div>
+              </div>
+              <div className="card2-item article">
+                <div className="card2-info">
+                  <h1>Web Development</h1>
                   <p>
                     ICOESS's web design and development services provides up to
                     clients satisfaction. Domain, Hosting, Responsive Web sites,
@@ -107,21 +147,7 @@ const Home = () => {
                   <img src="assets/service/web.jpg" alt="img" />{" "}
                 </div>
               </div>
-              <div className="card2-item article">
-                <div className="card2-info">
-                  <h1>Corporate Training</h1>
 
-                  <p>
-                    We help corporates to bridge competency gap towards building
-                    skilled and productive workforce. We provide turnkey in
-                    company training and skill building services...
-                  </p>
-                  <button className="cta">Know More</button>
-                </div>
-                <div className="card2-img">
-                  <img src="assets/service/web.jpg" alt="img" />{" "}
-                </div>
-              </div>
               <div className="card2-item article">
                 <div className="card2-info">
                   <h1>S/w Dev & OutSourcing</h1>
@@ -145,21 +171,6 @@ const Home = () => {
                     We aims at employing, deploying and monitoring a competent
                     and contented staff. Our IT Staffing service provides a
                     contingent IT professionals through smart hire...
-                  </p>
-                  <button className="cta">Know More</button>
-                </div>
-                <div className="card2-img">
-                  <img src="assets/service/web.jpg" alt="img" />{" "}
-                </div>
-              </div>
-              <div className="card2-item article">
-                <div className="card2-info">
-                  <h1>Education Support</h1>
-
-                  <p>
-                    Supporting Education began to be included as part of our
-                    corporate culture. ICOESS's educational practices &
-                    programes which have immediately applicable workskills...
                   </p>
                   <button className="cta">Know More</button>
                 </div>
@@ -225,36 +236,35 @@ const Home = () => {
             Our Service <span>Areas</span>
           </h1>
           <div className="card-container">
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
-            <div className="course-item wh-300 bg-green">
+            <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
             </div>
@@ -328,10 +338,10 @@ const Home = () => {
           className="home-contact-section container"
         >
           <div className="home-services-header">
-              <h1 className="section-title">
-                Contact <span>Us</span>
-              </h1>
-            </div>
+            <h1 className="section-title">
+              Contact <span>Us</span>
+            </h1>
+          </div>
           <div className="contact-container">
             <div className="contact-card">
               <div className="contact-left">
@@ -345,7 +355,7 @@ const Home = () => {
               <div className="contact-right">
                 <div class="contact-form">
                   <h3>Contact us</h3>
-                  <form action="">
+                  <form>
                     <p>
                       <label>First Name</label>
                       <input type="text" name="firstName" />
@@ -354,19 +364,19 @@ const Home = () => {
                       <label>Last Name</label>
                       <input type="text" name="lastName" />
                     </p>
-                    <p>
+                    <p className="block">
                       <label>Phone Number</label>
                       <input type="number" name="phone" />
                     </p>
-                    <p>
+                    <p className="block">
                       <label>Email Adress</label>
                       <input type="email" name="email" />
                     </p>
-                    <p class="block">
+                    <p className="block">
                       <label>Message</label>
                       <textarea name="message" rows="3"></textarea>
                     </p>
-                    <p className="block">
+                    <p>
                       <button>Send</button>
                     </p>
                   </form>

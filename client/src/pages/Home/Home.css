@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -101,6 +102,10 @@ html {
 .section {
   margin: 2rem 0;
 }
+.wh-150 {
+  width: 150px !important;
+  height: 150px !important;
+}
 .wh-300 {
   width: 300px !important;
   height: 300px !important;
@@ -163,8 +168,8 @@ html {
   padding: 10px 20px;
   color: rgb(0, 0, 0);
   background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 1.5rem;
+  border: 1px solid #505050;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
@@ -173,13 +178,13 @@ html {
 }
 .cta:hover {
   color: white;
-  background-color: crimson;
+  background-color: #505050;
   cursor: pointer;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   place-items: center;
   gap: 1rem;
 }
@@ -197,6 +202,7 @@ html {
 }
 
 .section-title {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 4rem;
   font-weight: 600;
   color: black;
@@ -206,6 +212,7 @@ html {
   text-align: center;
 }
 .section-title span {
+  font-family: 'Josefin Sans', sans-serif;
   color: crimson;
 }
 
@@ -256,8 +263,10 @@ html {
   box-shadow: 0 0 0.2rem #505050;
 }
 .cardslider-title {
+  font-family: 'Josefin Sans', sans-serif;
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -370,11 +379,13 @@ html {
   margin-block-start: var(--space-sm);
 }
 .content h1 {
-  font-size: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+
+  font-size: 3rem;
   font-weight: 500;
 }
 .content p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #747474;
   text-align: justify;
 }
@@ -432,15 +443,15 @@ html {
   width: 30%;
 }
 .heading2 {
-  font-size: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+
+  font-size: 3rem;
   font-weight: 400;
   color: black;
 }
 .paragraph {
   font-size: 1.5rem;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: black;
+  color: #5e5e5e;
 }
 
 .insight-imgs {
@@ -534,6 +545,7 @@ html {
   width: 100%;
 }
 .inside-icoess-card_content h3 {
+  font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 10px;
 }
 .inside-icoess-card_content p {
@@ -594,9 +606,7 @@ html {
   grid-template-columns: 1fr 1fr;
 }
 
-.contact-form form label {
 
-}
 .contact-form form label {
   display: block;
   font-size: 1.5rem;
@@ -625,16 +635,17 @@ html {
 .contact-form form button {
   background: #e4e4e4;
   border: 0;
-    /* width: fit-content; */
+    width: fit-content;
     padding: 1.5rem 4rem;
     font-size: 1.8rem; 
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #d63031;
+  background-color: #999999;
   color: #fff;
   outline: 0;
+  cursor: pointer;
 }
 
 

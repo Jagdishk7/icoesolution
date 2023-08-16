@@ -12,20 +12,20 @@ const Footer = () => {
   return (
     <>
       {/* ==================== FOOTER ==================== */}
-      <footer className="footer section">
+      <footer className="footer">
         <div className="footer__container container grid">
           <div className="footer__content grid">
             <div className="footer__data">
               <h3 className="footer__subtitle">Company</h3>
               <ul>
                 <li className="footer__item">
-                  <NavLink to="/team" className="footer__link">
-                    Team
+                  <NavLink to="/about" className="footer__link">
+                    About Us
                   </NavLink>
                 </li>
                 <li className="footer__item">
-                  <NavLink to="/about" className="footer__link">
-                    About Us
+                  <NavLink to="/team" className="footer__link">
+                    Team
                   </NavLink>
                 </li>
                 <li className="footer__item">

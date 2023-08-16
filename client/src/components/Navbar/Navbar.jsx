@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "./Navbar.css";
 import {
   FaFacebookSquare,
@@ -11,6 +11,12 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+
+  
+    
+  
+
+  
   return (
     <>
       <nav className="main-nav">
@@ -29,7 +35,27 @@ const Navbar = () => {
               <NavLink to="/" onClick={() => setShowMediaIcons(false)}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="/service" onClick={() => setShowMediaIcons(false)}>Services</NavLink>
+              <NavLink to="/service" className='nav-services' onClick={() => setShowMediaIcons(false)}>Services</NavLink>
+              <ul className="nav-services-container">
+                <li>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>Web Development</NavLink>
+                </li>
+                <li>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>App Development</NavLink>
+                </li>
+                <li>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>Staffing</NavLink>
+                </li>
+                <li>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>WebDevelopment</NavLink>
+                </li>
+                <li>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>WebDevelopment</NavLink>
+                </li>
+                <li>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>WebDevelopment</NavLink>
+                </li>
+              </ul>
             </li>
             <li>
               <NavLink to="/portfolio" onClick={() => setShowMediaIcons(false)}>Portfolio</NavLink>

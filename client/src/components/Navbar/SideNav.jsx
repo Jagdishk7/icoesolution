@@ -23,6 +23,9 @@ const SideNav = () => {
           <li>
             <a href="#inside-icoess">Inside ICOESS</a>
           </li>
+          <li>
+            <a href="#home-contact-section">Contact</a>
+          </li>
           
         </ul>
       </nav>
