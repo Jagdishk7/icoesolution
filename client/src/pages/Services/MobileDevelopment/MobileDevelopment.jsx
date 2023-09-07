@@ -72,7 +72,7 @@ const MobileDevelopment = () => {
           <div className="it-staffing-services">
             <div className="card2-item article">
               <div className="card2-info">
-                <h1>IT Staff Augmentation</h1>
+                <h1>Native App</h1>
                 <h4 className="heading4">INSTANT ACCESS, WITH ROOM TO GROW</h4>
                 <p>
                   Exceptional IT talent and scalable staffing solutions for
