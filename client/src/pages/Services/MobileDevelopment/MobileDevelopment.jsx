@@ -6,6 +6,7 @@ import HoverComponentView from "../../../components/hoverComponentView/HoverComp
 import OfferingSlider from "../../../components/cardsliders/OfferingSlider";
 import TitleTextCard from "../../../components/cards/TitleTextCard";
 import Contact from "../../../components/contact/Contact";
+import { NavLink } from "react-router-dom";
 
 const MobileDevelopment = () => {
   return (
@@ -34,25 +35,21 @@ const MobileDevelopment = () => {
 
       <main className="container">
         {/* Start Custom Mobile App Section  */}
-        <h3 className="heading3">
-          Custom Mobile App Development Services
-        </h3>
+        <h3 className="heading3">Custom Mobile App Development Services</h3>
         <section className=" webdevelopment-custom-container section container">
           <div className="content">
             <div className="content-left">
               <h1>Mobile App Development</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                mollitia, quasi hic ad reprehenderit, dolor molestias
-                consectetur quae assumenda ea fugit eveniet, aut non accusamus
-                culpa. Maxime a sapiente iste. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Odio mollitia, quasi hic ad
-                reprehenderit, dolor molestias consectetur quae assumenda ea
-                fugit eveniet, aut non accusamus culpa. Maxime a sapiente iste.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                mollitia, quasi hic ad reprehenderit, dolor molestias
-                consectetur quae assumenda ea fugit eveniet, aut non accusamus
-                culpa. Maxime a sapiente iste.
+                The mobile app development market is growing massively. In this
+                digital transformation dedicated era, investing in a mobile app
+                is a golden opportunity for businesses. In the third quarter of
+                2021, users downloaded 27.6 billion apps from Google Play and
+                8.1 billion downloads happened on the Apple App Store. Although
+                the competition is high for a new entrant, not supporting a
+                mobile app could be a big mistake given that most of the world’s
+                population is already preferring mobile apps as their favorite
+                touchpoint.
               </p>
             </div>
 
@@ -62,6 +59,77 @@ const MobileDevelopment = () => {
           </div>
         </section>
         {/* End Custom Website Section  */}
+
+        {/* Start Technology we use Section  */}
+        <h1 className="heading1">Key Approaches to Mobile App Development</h1>
+        <p className="para1">
+          Before investing in a mobile app, a business must decide the approach
+          they will follow to build an app. The most commonly known approaches
+          include — native apps, cross-platform apps, hybrid apps, progressive
+          web apps, and rapid mobile app development.
+        </p>
+        <section className=" section center">
+          <div className="it-staffing-services">
+            <div className="card2-item article">
+              <div className="card2-info">
+                <h1>IT Staff Augmentation</h1>
+                <h4 className="heading4">INSTANT ACCESS, WITH ROOM TO GROW</h4>
+                <p>
+                  Exceptional IT talent and scalable staffing solutions for
+                  companies of all sizes. Our highly skilled IT consultants
+                  extend your team’s capabilities without the overhead of
+                  in-house employees.
+                </p>
+                <NavLink className="cta" to={"/contact"}>
+                  SCHEDULE A CALL
+                </NavLink>
+              </div>
+              <div className="card2-img">
+                <img src="assets/service/web.jpg" alt="img" />{" "}
+              </div>
+            </div>
+            <div className="card2-item article">
+              <div className="card2-info">
+                <h1>Direct Hiring</h1>
+                <h4 className="heading4">FULL-TIME TECH TALENT</h4>
+                <p>
+                  Our dedicated direct placement recruiting services place
+                  in-demand IT talent across North America
+                </p>
+                <p>
+                  Proactive recruiting targets hidden talents and better
+                  prepares customers for potentially tight labor pools.
+                </p>
+                <NavLink className="cta" to={"/contact"}>
+                  GROW YOUR IT TALENT
+                </NavLink>
+              </div>
+              <div className="card2-img">
+                <img src="assets/service/web.jpg" alt="img" />{" "}
+              </div>
+            </div>
+            <div className="card2-item article">
+              <div className="card2-info">
+                <h1>Contract Hiring</h1>
+                <h4 className="heading4">SHORT-TERM HELP, LONG-TERM IMPACT</h4>
+
+                <p>
+                  Exceptional IT talent and scalable staffing solutions for
+                  companies of all sizes. Our highly skilled IT consultants
+                  extend your team’s capabilities without the overhead of
+                  in-house employees.
+                </p>
+                <NavLink className="cta" to={"/contact"}>
+                  GET CONTRACTED IT STAFF
+                </NavLink>
+              </div>
+              <div className="card2-img">
+                <img src="assets/service/web.jpg" alt="img" />{" "}
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Technology we use Section  */}
 
         {/* Start Technology we use Section  */}
         <h1 className="heading1">Technologies we use</h1>
@@ -122,20 +190,6 @@ const MobileDevelopment = () => {
           />
         </section>
         {/* End Technology we use Section  */}
-
-        {/* Start Industries we serve container  */}
-        <h1 className="heading1">Industries we serve</h1>
-        <section className="industries-weserve-container section">
-          <HoverComponentView />
-        </section>
-        {/* End Industries we serve container  */}
-
-        {/* Start Our Offerings container  */}
-        <h1 className="heading1">Our offerings for web design & development</h1>
-        <section className="our-offereings-container section">
-          <OfferingSlider />
-        </section>
-        {/* End Our Offerings container  */}
 
         {/* Start Why choose us container  */}
         <h1 className="heading1">Why choose us</h1>
