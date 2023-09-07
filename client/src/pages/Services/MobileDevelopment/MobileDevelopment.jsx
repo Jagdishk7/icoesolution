@@ -134,12 +134,7 @@ const MobileDevelopment = () => {
         {/* Start Technology we use Section  */}
         <h1 className="heading1">Technologies we use</h1>
         <section className="technologies-weuse-container section row flex-wrap center">
-          <TechCard
-            heading={"HTML"}
-            src={"assets/html.png"}
-            text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          placeat.`}
-          />
+          
           <TechCard
             heading={"CSS"}
             src={"assets/html.png"}
