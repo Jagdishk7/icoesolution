@@ -137,12 +137,6 @@ const MobileDevelopment = () => {
           
         
           <TechCard
-            heading={"JAVASCRIPT"}
-            src={"assets/html.png"}
-            text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          placeat.`}
-          />
-          <TechCard
             heading={"ReactJS"}
             src={"assets/html.png"}
             text={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
