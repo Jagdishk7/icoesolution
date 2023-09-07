@@ -34,28 +34,35 @@ const Navbar = () => {
             <li>
               <NavLink to="/" onClick={() => setShowMediaIcons(false)}>Home</NavLink>
             </li>
-            <li>
-              <NavLink to="/service" className='nav-services' onClick={() => setShowMediaIcons(false)}>Services</NavLink>
+            <li className="mobile-none">
+              <NavLink to="/service" className='nav-services' onClick={() => setShowMediaIcons(false)}>Services <span class="arrow">&#x25B6;</span></NavLink>
               <ul className="nav-services-container">
+                <li>
+                <NavLink to="/technicalTraining"  onClick={() => setShowMediaIcons(false)}>Technical Training</NavLink>
+                </li>
                 <li>
                 <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>Web Development</NavLink>
                 </li>
                 <li>
-                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>App Development</NavLink>
+                <NavLink to="/mobiled"  onClick={() => setShowMediaIcons(false)}>Mobile App Development</NavLink>
                 </li>
                 <li>
-                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>Staffing</NavLink>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>S/w Dev & OutSourcing</NavLink>
                 </li>
                 <li>
-                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>WebDevelopment</NavLink>
+                <NavLink to="/itstaffing"  onClick={() => setShowMediaIcons(false)}>IT Staffing & Smart Hire</NavLink>
                 </li>
                 <li>
-                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>WebDevelopment</NavLink>
-                </li>
-                <li>
-                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>WebDevelopment</NavLink>
+                <NavLink to="/webd"  onClick={() => setShowMediaIcons(false)}>Education Support</NavLink>
                 </li>
               </ul>
+              
+            </li>
+            <li className="mobile-service-section desktop-none">
+            <details>
+                <summary>Services</summary>
+                <a href="#">Hello</a>
+              </details>
             </li>
             <li>
               <NavLink to="/portfolio" onClick={() => setShowMediaIcons(false)}>Portfolio</NavLink>

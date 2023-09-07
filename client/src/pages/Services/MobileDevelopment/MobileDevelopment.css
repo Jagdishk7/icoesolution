@@ -1,0 +1,174 @@
+#webdevelopment-top {
+  background-image: url(../../../../public/assets/service/web.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  height: 50rem;
+}
+#webdevelopment-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#webdevelopment-top .webdevelopment-top {
+  display: flex;
+  align-items: center;
+}
+
+.webdevelopment-top {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 1rem;
+}
+.webdevelopment-top .webdevelopment-top-left {
+  width: 50%;
+}
+.webdevelopment-top .webdevelopment-top-left h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.webdevelopment-top .webdevelopment-top-left p {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.webdevelopment-top .webdevelopment-top-left h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.webdevelopment-top .webdevelopment-top-left .cta {
+  color: white;
+  font-size: 2rem;
+}
+.webdevelopment-top .webdevelopment-top-right {
+  width: 50%;
+}
+.webdevelopment-top .webdevelopment-top-right video {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem white;
+}
+.webdevelopment-top-right .card-slider {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10px;
+}
+.webdevelopment-top .slick-prev:before,
+.webdevelopment-top .slick-next:before {
+  color: white;
+}
+
+/* Custom Website-container Start */
+
+.webdevelopment-custom-container {
+  padding: 2rem;
+  max-width: 90vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.2rem #4b4a4a;
+  margin: 1rem auto 5rem auto;
+}
+.webdevelopment-custom-container .content {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 2rem;
+}
+.webdevelopment-custom-container .content-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+.webdevelopment-custom-container .content-left h3 {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+.webdevelopment-custom-container .content-right {
+  width: 50%;
+}
+.webdevelopment-custom-container .content-right img {
+  width: 100%;
+  border-radius: 1rem;
+}
+/* Custom Website container End */
+/* Technologies we use container Start */
+
+/* Technologies we use container End */
+/* Industries we serve container Start */
+.industries-weserve-container{
+  margin: 0 auto;
+}
+/* Industries we serve container End */
+
+/* why-choose-us-container Start */
+.why-choose-us-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* why-choose-us-container End */
+
+/* web-pricing-container Start */
+
+.web-pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.web-pricing-container > div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.web-pricing-container > div:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+.web-pricing-container > div h2 {
+  font-size: 1.9rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1rem;
+  color: #ffd900;
+}
+.web-pricing-container > div ul {
+  font-size: 1.5rem;
+  list-style-type: disc;
+}
+
+.web-pricing-container > div li {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  list-style-type: disc;
+  margin-left: 2rem;
+  color: #00e1ff;
+}
+
+/* web-pricing-container End */

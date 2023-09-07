@@ -1,7 +1,5 @@
 import React from "react";
 import "./Home.css";
-import Footer from "../../components/Footer/Footer";
-import Card1 from "../../components/cards/Card1";
 import SideNav from "../../components/Navbar/SideNav";
 import { FaLaptopCode } from "react-icons/fa";
 import { GiSmartphone } from "react-icons/gi";
@@ -48,9 +46,9 @@ const Home = () => {
 
         {/* Start Front Intro Section  */}
 
-        <article class="article front-intro">
-          <div class="content">
-            <h1 class="headline">Build your Web & Mobile Apps</h1>
+        <article className="article front-intro">
+          <div className="content">
+            <h1 className="headline">Build your Web & Mobile Apps</h1>
             <p>
               Attractive Websites are doors of your Business. Our Team of
               Experts provides the custom build, Sophisticated & Full Featured
@@ -73,7 +71,7 @@ const Home = () => {
             </p>
           </div>
 
-          <figure class="image-wrap">
+          <figure className="image-wrap">
             <img src="assets/icoess.jpg" alt="Shiv Shakti Gurukulam" />
           </figure>
         </article>
@@ -97,7 +95,7 @@ const Home = () => {
                     skilled and productive workforce. We provide turnkey in
                     company training and skill building services...
                   </p>
-                  <button className="cta">Know More</button>
+                  <button className="cta">Know More...</button>
                 </div>
                 <div className="card2-img">
                   <img src="assets/service/web.jpg" alt="img" />{" "}
@@ -112,7 +110,7 @@ const Home = () => {
                     corporate culture. ICOESS's educational practices &
                     programes which have immediately applicable workskills...
                   </p>
-                  <button className="cta">Know More</button>
+                  <button className="cta">Know More...</button>
                 </div>
                 <div className="card2-img">
                   <img src="assets/service/web.jpg" alt="img" />{" "}
@@ -126,7 +124,7 @@ const Home = () => {
                     clients satisfaction. Domain, Hosting, Responsive Web sites,
                     E-Commerce web sites etc. are key areas of service...
                   </p>
-                  <button className="cta">Know More</button>
+                  <button className="cta">Know More...</button>
                 </div>
                 <div className="card2-img">
                   <img src="assets/service/web.jpg" alt="img" />{" "}
@@ -141,7 +139,7 @@ const Home = () => {
                     clients satisfaction. Domain, Hosting, Responsive Web sites,
                     E-Commerce web sites etc. are key areas of service...
                   </p>
-                  <button className="cta">Know More</button>
+                  <button className="cta">Know More...</button>
                 </div>
                 <div className="card2-img">
                   <img src="assets/service/web.jpg" alt="img" />{" "}
@@ -157,7 +155,7 @@ const Home = () => {
                     testing to our clients. Client satisfaction is our key
                     policy when providing IT services to our client ...
                   </p>
-                  <button className="cta">Know More</button>
+                  <button className="cta">Know More...</button>
                 </div>
                 <div className="card2-img">
                   <img src="assets/service/web.jpg" alt="img" />{" "}
@@ -172,7 +170,7 @@ const Home = () => {
                     and contented staff. Our IT Staffing service provides a
                     contingent IT professionals through smart hire...
                   </p>
-                  <button className="cta">Know More</button>
+                  <button className="cta">Know More...</button>
                 </div>
                 <div className="card2-img">
                   <img src="assets/service/web.jpg" alt="img" />{" "}
@@ -206,7 +204,7 @@ const Home = () => {
               </div>
               <div className="grid_item center">
                 <div class="card">
-                  <img src="assets/card1.png" alt="Project 1" />
+                  <img src="assets/background.jpg" alt="Project 1" />
                   <a href="/">
                     <div class="card_content">
                       <h3>Read More</h3>
@@ -235,7 +233,7 @@ const Home = () => {
           <h1 className="section-title">
             Our Service <span>Areas</span>
           </h1>
-          <div className="card-container">
+          <div className="article">
             <div className="course-item wh-150 bg-green">
               <FaLaptopCode className="course-icon" />
               <p>Websites</p>
@@ -331,62 +329,43 @@ const Home = () => {
           </div>
         </section>
         {/*  End inside icoess Section */}
-        {/*  Start Contact Section */}
 
-        <section
-          id="home-contact-section"
-          className="home-contact-section container"
-        >
-          <div className="home-services-header">
-            <h1 className="section-title">
-              Contact <span>Us</span>
+        {/* Start About Us Section  */}
+
+        <article id="home-about-section" className="home-about ">
+          <div className="home-about-left">
+            <h1>About Us</h1>
+            <h3>Vision</h3>
+            <p>Paragraph</p>
+            <h3>Mission</h3>
+            <p>Paragraph</p>
+          </div>
+
+          <video
+            className="home-about-right"
+            src="assets/videos/Intro.mp4"
+            controls
+            controlList="nodownload"
+          ></video>
+          
+        </article>
+        {/* End About Us Section  */}
+        {/*  Start Contact Section */}
+        <article id="home-contact-section" className="home-contact ">
+          <div className="home-contact-left">
+            <img src="assets/contact.jpg" alt="" />
+          </div>
+
+          <div className="home-contact-right">
+            <h1>
+              Talk to us for your business needs, all staffing requirements and
+              anything on technology. We would love to here from you & share our
+              expertise with you
             </h1>
+            <button className="">Contact Us</button>
           </div>
-          <div className="contact-container">
-            <div className="contact-card">
-              <div className="contact-left">
-                <img src="assets/contact.jpg" alt="" />
-                <p>
-                  Talk to us for your business needs, all staffing requirements
-                  and anything on technology. We would love to here from you &
-                  share our expertise with you
-                </p>
-              </div>
-              <div className="contact-right">
-                <div class="contact-form">
-                  <h3>Contact us</h3>
-                  <form>
-                    <p>
-                      <label>First Name</label>
-                      <input type="text" name="firstName" />
-                    </p>
-                    <p>
-                      <label>Last Name</label>
-                      <input type="text" name="lastName" />
-                    </p>
-                    <p className="block">
-                      <label>Phone Number</label>
-                      <input type="number" name="phone" />
-                    </p>
-                    <p className="block">
-                      <label>Email Adress</label>
-                      <input type="email" name="email" />
-                    </p>
-                    <p className="block">
-                      <label>Message</label>
-                      <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p>
-                      <button>Send</button>
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </article>
         {/*  End Contact Section */}
-        <Footer />
       </main>
     </>
   );

@@ -19,7 +19,9 @@ li {
   list-style: none;
 }
 
-/* 
+.desktop-none{
+  display: none;
+} 
 
 
 /* SideNav Start*/
@@ -36,7 +38,7 @@ li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #ffffff96;
+  background-color: #ffffff00;
   height: 100%;
   overflow: auto;
   box-shadow: 0 0 0.5rem rgb(54, 54, 54);
@@ -45,16 +47,25 @@ li {
   justify-content: space-between;
 }
 
+.sidenav li{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .sidenav li a {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+
   display: block;
   color: #000000;
   padding: 8px 2px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.3rem;
-  background-color: #ffffffcc;
-  border-top: 1px solid #505050;
-  border-bottom: 1px solid #505050;
+  font-size: 1.4rem;
+  height: 100%;
+
+  background-color: #ffffff00;
 }
 
 .sidenav li a:hover {
@@ -72,7 +83,6 @@ li {
   position: sticky;
   top: 0;
   background-color: #fff;
-  width: 100%;
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
@@ -96,7 +106,7 @@ li {
   grid-column: 3/4;
 }
 
-.menu-link ul {
+.menu-link >ul {
   height: 10rem;
   display: flex;
   justify-content: space-around;
@@ -117,6 +127,7 @@ li {
 
 .social-media ul li {
   text-align: right;
+  
 }
 
 .social-media ul li:first-child {
@@ -143,12 +154,15 @@ li {
 .menu-link > ul li {
   font-size: 1.8rem;
   position: relative;
+  padding: auto 0;
 }
 
 .menu-link > ul li a {
   text-transform: capitalize;
   color: rgba(0, 0, 3, 0.8);
   transition: 0.5s;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 /* .menu-link ul li a:focus {
   text-transform: capitalize;
@@ -196,28 +210,39 @@ li {
   color: rgb(255, 0, 0);
 }
 
+.menu-link > ul li:hover .nav-services-container li{
+    display: block;
+}
+.menu-link > ul li:hover .nav-services-container{
+
+    position: absolute;
+  top: 2rem;
+  left: -5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 300px !important;
+}
+.nav-services-container li{
+  display: none;
+  position: absolute;
+  top: 0px;
+}
 
 .nav-services{
   position: relative;
 }
-.nav-services-container{
-  position: absolute;
-  top: 6rem;
-  left: -5rem;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
 
-  justify-content: start;
-  flex-direction: column;
-  height: 300px !important;
-  display: none !important;
-}
 
 .nav-services-container li {
   width: 200px;
   font-size: 1.8rem;
   position: relative;
+  padding: auto 0;
 }
 
 .nav-services-container li a {
@@ -226,9 +251,7 @@ li {
   transition: 0.5s;
   text-align: start;
   display: block;
-}
-.nav-services:hover .nav-services-container{
-  transform: translateX(-100px) !important;
+  font-size: 1.3rem;
 }
 
 /* responsive css style  */
@@ -239,7 +262,7 @@ li {
   }
   
   .logo,
-  .menu-link ul,
+  .menu-link > ul,
   .social-media ul {
     height: 8rem;
   }
@@ -248,12 +271,17 @@ li {
 /* responsive css style  */
 @media (max-width: 998px) {
 
+  .mobile-none{
+    display: none;
+  }
+
     .logo > img{
         width: 12rem;
     }
   .main-nav {
+    position: relative;
     height: 7rem;
-    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+    /* grid-template-columns: 2rem 2fr 3fr 2rem 2rem; */
   }
 
   .menu-link {
@@ -261,7 +289,7 @@ li {
   }
 
   .logo,
-  .social-media ul {
+  .social-media > ul {
     height: 7rem;
   }
 
@@ -272,10 +300,13 @@ li {
   } */
 
   .mobile-menu-link {
+
+    position :absolute;
+    top: 0;
     background-color: white;
-    height: 20rem;
-    display: grid;
-    grid-column: 1/6;
+    height:350px;
+    width: 100vw;
+ display: flex;
     align-items: center;
     padding-left: 1rem;
     transition: all 1s linear;
@@ -284,17 +315,28 @@ li {
       z-index: 99;
   }
 
-  .mobile-menu-link ul {
-    height: 20rem;
+  .mobile-menu-link>ul {
     display: flex;
-    justify-content: space-around;
+
     flex-direction: column;
     align-items: start;
+    position: absolute;
+    top: 15rem;
   }
 
   .mobile-menu-link ul li:first-child {
     transition-delay: 0.2s;
   }
+
+  .mobile-menu-link > ul li:active .nav-services-container li{
+
+}
+  .mobile-menu-link > ul li:hover .nav-services-container{
+    display: none;
+    position:absolute ;
+    left: -500px;
+    height: 0 !important;
+}
 
   .social-media {
     grid-row: 1/2;
@@ -317,7 +359,7 @@ li {
   }
 
   .social-media .hamburger-menu {
-    display: block;
+    display: inline;
     font-size: 2.5rem;
   }
 }

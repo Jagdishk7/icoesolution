@@ -1,0 +1,284 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+.heading1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #494949;
+  font-weight: 600;
+  text-align: start;
+  margin: 2rem 0;
+}
+.heading2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: #494949;
+  font-weight: 600;
+  text-align: start;
+  margin: 2rem 0;
+}
+.heading3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  color: #494949;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 0;
+}
+.heading4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: #838383;
+  font-weight: normal;
+  text-align: center;
+  margin: 2rem 0;
+}
+#training-top {
+  background-image: url(../../../../public/assets/service/web.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  height: 50rem;
+}
+#training-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#training-top .training-top {
+  display: flex;
+  align-items: center;
+}
+
+.training-top {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 2rem 2rem 0 2rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.training-top .training-top-left {
+  width: 50%;
+}
+.training-top .training-top-left h1 {
+  font-family: "Josefin Sans", sans-serif;
+
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.training-top .training-top-left h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.training-top .training-top-right {
+  width: 50%;
+}
+.training-top .training-top-right video {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem white;
+}
+
+/* Our Leading Partners  Start*/
+
+.partners-training-section {
+  width: 100%;
+  max-width: 100vw;
+}
+.partners-training-section h4 {
+  margin-bottom: 2rem;
+}
+
+.partners-training-section .training-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.partners-training-section .training-img-container > img {
+  width: 20rem;
+}
+/* Our Leading Partners End*/
+
+/* training-programs-container Start */
+
+.training-programs-container {
+  padding: 2rem;
+  max-width: 90vw;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.2rem #4b4a4a;
+}
+.training-programs-container .content {
+  display: flex;
+  flex-direction: row;
+}
+.training-programs-container .content-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+.training-programs-container .content-left h3 {
+  font-size: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+.training-programs-container .content-right {
+  width: 50%;
+}
+.training-programs-container .content-right img {
+  width: 100%;
+  border-radius: 1rem;
+}
+/* training-programs-container End */
+
+/* training-pg-certifications-container Start */
+.training-pg-certifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.training-pg-certifications-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.training-pg-certifications-container ul li {
+  font-size: 1.8rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+.training-pg-certifications-container ul li svg {
+  color: rgb(255, 0, 221);
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+.training-pg-certifications-container .card3 {
+  width: 320px;
+  height: 400px;
+}
+.training-pg-certifications-container .card3:hover .card3-content{
+  background-color: #ff4bae;
+}
+/* training-pg-certifications-container End */
+
+/* training-certificate-programs-container Start */
+.training-certificate-programs-container .simplecard{
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 5px #6464646b;
+}
+.training-certificate-programs-container .simplecard:hover{
+  box-shadow: 0 0 5px #35353591;
+}
+.training-certificate-programs-container .simplecard-title{
+  height: 5rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.training-certificate-programs-container .simplecard-desc{
+  height: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/* training-certificate-programs-container End */
+
+
+/* training-hiring-partners-container Start */
+.training-hiring-partners-container{
+  display: flex;
+  flex-direction: row;
+
+}
+.training-hiring-partners-left{
+  width: 50%;
+}
+.training-hiring-partners-left h3{
+  font-size: 2rem;
+  color: #6e6e6e;
+}
+.training-hiring-partners-right{
+  width: 50%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+/* training-hiring-partners-container End */
+
+/* training-alumni-talk-container Start */
+.training-alumni-talk-container{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-left : auto;
+  margin-right : auto;
+}
+
+.training-alumni-talk-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.training-alumni-talk-left-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+.training-alumni-talk-left-item > img{
+  width: 30%;
+}
+.training-alumni-talk-left-item > span{
+font-size: 3.5rem;
+font-weight: 600;
+font-family: "Josefin Sans", sans-serif;
+display: flex;
+align-items: center;
+}
+.training-alumni-talk-left-item > span::before{
+content: '';
+height: 3.5rem;
+width: 2px;
+background-color: #919191;
+margin-right: 3rem;
+}
+.training-alumni-talk-left-item > span > svg{
+font-size: 1rem;
+color: #ffae00;
+}
+.training-alumni-talk-right{
+  width: 50%;
+}
+/* training-alumni-talk-container End */

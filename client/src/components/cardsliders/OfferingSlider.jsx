@@ -4,8 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './CardSlider.css'
+import AlumniCard from '../cards/AlumniCard';
 
-const CardSlider = ({heading}) => {
+const OfferingSlider = ({heading}) => {
 
 
   // if(window.innerWidth<='1200' && window.innerWidth>='800'){
@@ -17,12 +18,10 @@ const CardSlider = ({heading}) => {
 
   var settings = {
         dots: true,
-        // infinite: true,
-        speed: 1000,
-        slidesToShow: 4,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
         slidesToScroll: 1,
-
-        centerPadding:'20px',
         responsive:[
           {
             breakpoint:425,
@@ -43,7 +42,7 @@ const CardSlider = ({heading}) => {
           {
             breakpoint:592,
             settings:{
-              slidesToShow:3,
+              slidesToShow:2,
               centerMode:true,
               centerPadding:'40px'
             }
@@ -55,20 +54,6 @@ const CardSlider = ({heading}) => {
               centerMode:true
             }
           },
-          {
-            breakpoint:963,
-            settings:{
-              slidesToShow:5,
-              centerMode:false
-            }
-          },
-          {
-            breakpoint:1200,
-            settings:{
-              slidesToShow:6,
-              centerMode:false
-            }
-          }
         ]
       };
 
@@ -76,30 +61,39 @@ const CardSlider = ({heading}) => {
     < >
       <Slider {...settings} className='card-slider'>
       <div className='slider-item'>
-        {/* <img src="assets/icoess-logo.png" alt="" /> */}
-        <p>Full Stack Web Development</p>
+       <div className="white-card">
+        <h3 className='heading4'> Wireframe & UI/UX Design</h3>
+       </div>
       </div>
       <div className='slider-item'>
-        {/* <img src="assets/icoess-logo.png" alt="" /> */}
-        <p>Full Stack Web Development</p>
+       <div className="white-card">
+        <h3 className='heading4'>Single Page application design</h3>
+       </div>
       </div>
       <div className='slider-item'>
-        {/* <img src="assets/icoess-logo.png" alt="" /> */}
-        <p>Full Stack Web Development</p>
+       <div className="white-card">
+        <h3 className='heading4'>Custom Website development</h3>
+       </div>
       </div>
       <div className='slider-item'>
-        {/* <img src="assets/icoess-logo.png" alt="" /> */}
-        <p>Full Stack Web Development</p>
+       <div className="white-card">
+        <h3 className='heading4'>Ecommerce Website</h3>
+       </div>
       </div>
       <div className='slider-item'>
-        {/* <img src="assets/icoess-logo.png" alt="" /> */}
-        <p>Full Stack Web Development</p>
+       <div className="white-card">
+        <h3 className='heading4'>Full Stack Website Development</h3>
+       </div>
       </div>
-
+      <div className='slider-item'>
+       <div className="white-card">
+        <h3 className='heading4'>CMS (WP & WooCommerce)</h3>
+       </div>
+      </div>
       
     </Slider>
     </>
   )
 }
 
-export default CardSlider
+export default OfferingSlider;

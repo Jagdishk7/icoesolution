@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.wh-150 {
+    width: 150px !important;
+    height: 150px !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .wh-300 {
+    width: 300px !important;
+    height: 300px !important;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .w-85{
+    width: 87vw;
   }
-}
+  
+  .bg-green {
+    background-color: #45e645ee;
+  }
+  .bg-cyan {
+    background-color: #1de7ccc5;
+  }
+  .bg-leafgreen {
+    background-color: rgb(147, 189, 33);
+  }
+  .bg-green {
+    background-color: #45e645ee;
+  }
+  .bg-grey {
+    background-color: #666666;
+  }
+  
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .jcc {
+    display: flex;
+    justify-content: center;
+  }
+  .jcsb {
+    display: flex;
+    justify-content: space-between;
+  }
+  .jcse {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .aic {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid crimson;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+  }
+  .cta:hover {
+    color: white;
+    background-color: #ff6a6a;
+    cursor: pointer;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .container {
+    padding: 10px 5%;
+  }

@@ -1,7 +1,9 @@
 /*=============== FOOTER ===============*/
 .footer__container {
     row-gap: 5rem;
-    background-color: #dbdbdb;
+    background-color: #e7e7e7;
+    padding-top: 5rem;
+    padding-left: 12rem;
   }
   
   .footer__content {
@@ -43,6 +45,7 @@
   
   .footer__link:hover {
     color: var(--title-color);
+    text-decoration: underline;
   }
   
   .footer__rights {
@@ -52,10 +55,15 @@
     text-align: center;
   }
   
-  .footer__copy,
+  .footer__copy{
+    font-family: 'Josefin Sans', sans-serif;
+
+    font-size: 1.5rem;
+    color: var(--text-color-dark);
+  }
   .footer__terms-link {
-    font-size: 1rem;
-    color: var(--text-color-light);
+    font-size: 1.3rem;
+    color: var(--title-color);
   }
   
   .footer__terms {

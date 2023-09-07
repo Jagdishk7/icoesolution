@@ -1,0 +1,87 @@
+#itstaffing-top {
+  background-image: url(../../../../public/assets/service/web.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#itstaffing-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#itstaffing-top .itstaffing-top {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.itstaffing-top h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+.itstaffing-top p {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.itstaffing-top .cta {
+  font-family: "Josefin Sans", sans-serif;
+color: white;
+width: fit-content;
+font-size: 2rem;
+text-transform: capitalize;
+background-color: crimson;
+}
+.itstaffing-top .cta:hover {
+color: white;
+width: fit-content;
+font-size: 2rem;
+text-transform: capitalize;
+background-color: transparent;
+}
+
+/* IT Talent Container Starts */
+.it-talent-container{
+  display: flex;
+  align-items: center;
+}
+.it-talent-container p{
+  font-family: "Josefin Sans", sans-serif;
+color: black;
+font-size: 1.8rem;
+margin-bottom: 2rem;
+}
+/* IT Talent Container End */
+
+/* it-staffing-services Start */
+.it-staffing-services .card2-item{
+  width: 100%;
+}
+.it-staffing-services .card2-item .card2-info h1{
+  margin-bottom: 0;
+}
+.it-staffing-services .card2-item .card2-info p{
+  font-size: 1.5rem;
+}
+.it-staffing-services .card2-item .card2-info h4{
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+
+}
+/* it-staffing-services END */

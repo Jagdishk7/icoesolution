@@ -44,20 +44,20 @@
   margin-bottom: 1rem;
 }
 
-/* Card2 */
+/* ======================================================== Card2 ============================================ */
 
 .card2-item {
   display: flex;
   align-items: center;
   justify-content: center;
   /* flex-direction: column; */
-  width: 90%;
+  width: 85%;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
   direction: ltr;
   /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
-  padding: 2rem;
+  padding: 1rem;
 }
 .card2-info {
   padding: 10px;
@@ -85,14 +85,12 @@
   text-align: justify;
 }
 .card2-img {
-  flex-basis: 40%;
-  height: auto;
-  overflow: hidden;
+  flex-basis: 40%;  overflow: hidden;
   position: relative;
   border-radius: 1rem;
 }
 
-.card2-img:after {
+/* .card2-img:after {
   content: "";
   position: absolute;
   left: 0;
@@ -101,13 +99,110 @@
   width: 100%;
   background-image: linear-gradient(60deg, #2c313675 0%, #485563ab 100%);
   opacity: 0.7;
-}
+} */
+/* .card2-img:after:hover {
+  box-shadow: 0 0 10rem rgb(68, 68, 68);
+} */
 .card2-img img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  border-radius: 1rem;
+
   transition: 0.3s ease transform;
 }
-.card2-item .card2-img:hover img {
-  transform: scale(1.1);
+.card2-item:hover {
+  box-shadow: 0 0 0.3rem rgba(68, 68, 68, 0.658);
+  transition: all 0.1s ease-in-out;
 }
+
+/* =============================== CARD 3 ============================================ */
+.card3 {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #9797975e;
+  transition: 0.2s ease-in-out;
+}
+.card3:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 5px #5353534d;
+  transition: 0.2s ease-in-out;
+}
+.card3-content {
+  position: relative;
+  top: 0;
+  padding: 20px;
+}
+.card3-image-container img {
+  border-radius: 5px ;
+  width: 100%;
+}
+.card3-content h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  
+}
+.card3-content p {
+  font-size: 1.3rem;
+}
+
+/*  ============================================= AlimniCard Start ================================================= */
+.alumnicard-container{
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+.alumnicard-top{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.alumnicard-top img{
+width: 30%;
+  border-radius: 50%;
+}
+.alumnicard-bottom {
+  border-radius: 50%;
+  height: 100px;
+}
+/*  ============================================= AlimniCard End ================================================= */
+/*  ============================================= TechCard Start ================================================= */
+.tech-card-container{
+  width: 200px;
+  
+}
+.tech-card-container img{
+  width: 100%;
+}
+.tech-card-container h1{
+  text-align: center;
+}
+.tech-card-container P{
+text-align: center;
+}
+/*  ============================================= TechCard End ================================================= */
+/*  ============================================= TitleTextCard Start ================================================= */
+.titletext-card-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.titletext-card-container > h1{
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+font-size: 1.5rem;
+height: 50px;
+}
+.titletext-card-container > p{
+  text-align: center;
+font-size: 1.2rem;
+color: #747474;
+}
+/*  ============================================= TitleTextCard End ================================================= */

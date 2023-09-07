@@ -1,0 +1,43 @@
+.hoverComponent-container{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 80vw;
+    box-shadow: 0 0 0.3rem #acacac;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+.hoverComponent-left{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    background-color: rgb(219, 219, 219);
+
+}
+.hoverComponent-left span{
+    font-family: "Josefin Sans", sans-serif;
+    padding: auto 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dotted black;
+    font-size: 2rem;
+    cursor:default;
+}
+
+.hoverComponent-left span:nth-last-child(1){
+    border: none;
+}
+.hoverComponent-left span:hover{
+    background-color: rgb(255, 5, 255);
+}
+.hoverComponent-right{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
